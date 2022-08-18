@@ -1,0 +1,3 @@
+select child.id, child.name, parent.name as parent_name
+from user child
+left join user parent on child.parent_id = parent.id;
